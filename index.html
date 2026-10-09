@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafaq Messenger</title>
+    <meta name="description" content="دردشة جماعية جميلة ومبسطة باسم رفاق" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-badge">ر</div>
+          <div>
+            <p class="eyebrow">تطبيق</p>
+            <h1>رفاق</h1>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <span>⌕</span>
+          <input type="text" placeholder="بحث" aria-label="بحث" />
+        </div>
+
+        <div class="chat-list">
+          <div class="chat-item active">
+            <div class="avatar avatar-blue">غ</div>
+            <div class="chat-meta">
+              <div class="chat-meta-row">
+                <strong>مجموعة رفاق</strong>
+                <span>الآن</span>
+              </div>
+              <small>أحمد: جاهز للمرحلة التالية</small>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="avatar avatar-green">م</div>
+            <div class="chat-meta">
+              <div class="chat-meta-row">
+                <strong>الموظفون</strong>
+                <span>10:45</span>
+              </div>
+              <small>مراجعة التصميم</small>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="avatar avatar-purple">ف</div>
+            <div class="chat-meta">
+              <div class="chat-meta-row">
+                <strong>الفريق</strong>
+                <span>9:12</span>
+              </div>
+              <small>ممكن نبدأ اليوم؟</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <div class="header-main">
+            <button class="icon-btn" aria-label="عودة">←</button>
+            <div class="group-cover">ر</div>
+            <div>
+              <h2>مجموعة رفاق</h2>
+              <p>12 عضو متصل الآن</p>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <button class="icon-btn" aria-label="مكالمة">☎</button>
+            <button class="icon-btn" aria-label="مزيد">⋮</button>
+          </div>
+        </header>
+
+        <section class="message-area" id="messageArea" aria-live="polite">
+          <div class="date-pill">اليوم</div>
+
+          <article class="message received">
+            <div class="message-header">
+              <span class="sender">أحمد</span>
+            </div>
+            <div class="bubble">مرحباً الجميع! جاهز للمرحلة التالية؟</div>
+            <time>9:40</time>
+          </article>
+
+          <article class="message sent">
+            <div class="bubble">أكيد، أستطيع المساعدة ونبدأ فوراً.</div>
+            <time>9:41</time>
+          </article>
+
+          <article class="message received">
+            <div class="message-header">
+              <span class="sender">سارة</span>
+            </div>
+            <div class="bubble">أحببت الواجهة، خاصة الألوان والهوية البصرية.</div>
+            <time>9:42</time>
+          </article>
+
+          <article class="message typing-row">
+            <div class="typing-indicator" aria-label="يكتب الآن">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </article>
+        </section>
+
+        <form class="composer" id="composer">
+          <button type="button" class="action-btn" aria-label="إرفاق">＋</button>
+          <input id="messageInput" type="text" placeholder="اكتب رسالة..." aria-label="رسالة" />
+          <button type="submit" class="send-btn" aria-label="إرسال">إرسال</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
