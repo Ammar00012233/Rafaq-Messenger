@@ -3,15 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>رفاق - دردشة جماعية</title>
-    <meta
-      name="description"
-      content="واجهة دردشة جماعية قوية ومفصلة لنظام مراسلة يشبه تيليجرام" />
+    <title>رفاق | دردشة جماعية</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,7 +25,7 @@
           <input type="text" placeholder="بحث" aria-label="بحث" />
         </div>
 
-        <div class="chat-list" aria-label="قائمة الدردشات">
+        <div class="chat-list">
           <div class="chat-item active">
             <div class="avatar avatar-blue">غ</div>
             <div class="chat-meta">
@@ -78,7 +73,7 @@
           </div>
 
           <div class="header-actions">
-            <button class="icon-btn" aria-label="مكالمة">☎</button>
+            <a href="profile.html" class="icon-btn profile-link" aria-label="ملف شخصي">👤</a>
             <button class="icon-btn" aria-label="مزيد">⋮</button>
           </div>
         </header>
@@ -87,9 +82,7 @@
           <div class="date-pill">اليوم</div>
 
           <article class="message received">
-            <div class="message-header">
-              <span class="sender">أحمد</span>
-            </div>
+            <div class="message-header"><span class="sender">أحمد</span></div>
             <div class="bubble">مرحباً الجميع! جاهز للمرحلة التالية؟</div>
             <time>9:40</time>
           </article>
@@ -100,26 +93,20 @@
           </article>
 
           <article class="message received">
-            <div class="message-header">
-              <span class="sender">سارة</span>
-            </div>
+            <div class="message-header"><span class="sender">سارة</span></div>
             <div class="bubble">أحببت الواجهة، خاصة الألوان والهوية البصرية.</div>
             <time>9:42</time>
           </article>
 
           <article class="message received">
-            <div class="message-header">
-              <span class="sender">محمود</span>
-            </div>
+            <div class="message-header"><span class="sender">محمود</span></div>
             <div class="bubble">أقترح نضيف شاشة إعدادات المجموعة في المرحلة القادمة.</div>
             <time>9:43</time>
           </article>
 
           <article class="message typing-row" id="typingRow">
             <div class="typing-indicator" aria-label="يكتب الآن">
-              <span></span>
-              <span></span>
-              <span></span>
+              <span></span><span></span><span></span>
             </div>
           </article>
         </section>
@@ -158,22 +145,10 @@
             <h4>ملخص المجموعة</h4>
           </div>
           <div class="meta-grid">
-            <div>
-              <strong>8</strong>
-              <span>محادثات</span>
-            </div>
-            <div>
-              <strong>145</strong>
-              <span>رسالة</span>
-            </div>
-            <div>
-              <strong>3</strong>
-              <span>مهام</span>
-            </div>
-            <div>
-              <strong>4</strong>
-              <span>أحداث</span>
-            </div>
+            <div><strong>8</strong><span>محادثات</span></div>
+            <div><strong>145</strong><span>رسالة</span></div>
+            <div><strong>3</strong><span>مهام</span></div>
+            <div><strong>4</strong><span>أحداث</span></div>
           </div>
         </div>
       </aside>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رفاق | ملفك الشخصي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="profile-body">
+    <div class="profile-shell">
+      <header class="profile-header">
+        <div class="header-main">
+          <a href="index.html" class="back-link">←</a>
+          <div>
+            <p>إعدادات</p>
+            <h2>الملف الشخصي</h2>
+          </div>
+        </div>
+        <button class="primary-btn small">حفظ</button>
+      </header>
+
+      <main class="profile-main">
+        <section class="profile-card top-card">
+          <div class="avatar-large">ر</div>
+          <div class="profile-meta">
+            <h3>رائد الحربي</h3>
+            <p>@raeed</p>
+            <span class="status-pill online">متصل الآن</span>
+          </div>
+        </section>
+
+        <section class="profile-grid">
+          <div class="profile-card">
+            <h4>معلومات الحساب</h4>
+            <div class="info-list">
+              <div><label>الاسم</label><input value="رائد الحربي" /></div>
+              <div><label>اسم المستخدم</label><input value="@raeed" /></div>
+              <div><label>البريد</label><input value="raeed@email.com" /></div>
+              <div><label>الدولة</label><input value="السعودية" /></div>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <h4>الإشعارات</h4>
+            <div class="toggle-list">
+              <div class="toggle-item"><span>إشعارات الرسائل</span><input type="checkbox" checked /></div>
+              <div class="toggle-item"><span>إشعارات المجموعة</span><input type="checkbox" checked /></div>
+              <div class="toggle-item"><span>الصوت</span><input type="checkbox" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="profile-card settings-box">
+          <h4>الأمان</h4>
+          <div class="settings-list">
+            <button>تغيير كلمة المرور</button>
+            <button>إدارة الحساب</button>
+            <button class="danger">تسجيل الخروج</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

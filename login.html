@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رفاق | تسجيل الدخول</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <div class="auth-visual">
+        <div class="auth-brand">
+          <div class="brand-badge">ر</div>
+          <div>
+            <p>تطبيق</p>
+            <h1>رفاق</h1>
+          </div>
+        </div>
+
+        <div class="visual-card">
+          <div class="mini-chat">
+            <span>أحمد</span>
+            <div class="bubble dark">جاهز للمرحلة التالية؟</div>
+          </div>
+          <div class="mini-chat right">
+            <span>أنت</span>
+            <div class="bubble light">أكيد، لنبدأ الآن.</div>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div>
+            <strong>12k+</strong>
+            <span>رسالة يومية</span>
+          </div>
+          <div>
+            <strong>99.9%</strong>
+            <span>استقرار</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-panel">
+        <div class="auth-header">
+          <p>مرحباً بعودتك</p>
+          <h2>تسجيل الدخول</h2>
+        </div>
+
+        <form class="auth-form" id="loginForm">
+          <label>
+            <span>البريد الإلكتروني</span>
+            <input type="email" placeholder="example@email.com" />
+          </label>
+
+          <label>
+            <span>كلمة المرور</span>
+            <input type="password" placeholder="********" />
+          </label>
+
+          <div class="form-row">
+            <label class="check-row">
+              <input type="checkbox" checked />
+              <span>تذكرني</span>
+            </label>
+            <a href="#">نسيت كلمة المرور؟</a>
+          </div>
+
+          <button type="submit" class="primary-btn">تسجيل الدخول</button>
+          <button type="button" class="secondary-btn">إنشاء حساب جديد</button>
+        </form>
+
+        <div class="auth-footer">
+          <span>ليس لديك حساب؟</span>
+          <a href="index.html">الدخول كضيف</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
