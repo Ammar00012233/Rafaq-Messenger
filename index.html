@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafaq Messenger</title>
-    <meta name="description" content="دردشة جماعية جميلة ومبسطة باسم رفاق" />
+    <title>رفاق - دردشة جماعية</title>
+    <meta
+      name="description"
+      content="واجهة دردشة جماعية قوية ومفصلة لنظام مراسلة يشبه تيليجرام" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -26,7 +30,7 @@
           <input type="text" placeholder="بحث" aria-label="بحث" />
         </div>
 
-        <div class="chat-list">
+        <div class="chat-list" aria-label="قائمة الدردشات">
           <div class="chat-item active">
             <div class="avatar avatar-blue">غ</div>
             <div class="chat-meta">
@@ -103,7 +107,15 @@
             <time>9:42</time>
           </article>
 
-          <article class="message typing-row">
+          <article class="message received">
+            <div class="message-header">
+              <span class="sender">محمود</span>
+            </div>
+            <div class="bubble">أقترح نضيف شاشة إعدادات المجموعة في المرحلة القادمة.</div>
+            <time>9:43</time>
+          </article>
+
+          <article class="message typing-row" id="typingRow">
             <div class="typing-indicator" aria-label="يكتب الآن">
               <span></span>
               <span></span>
@@ -118,6 +130,53 @@
           <button type="submit" class="send-btn" aria-label="إرسال">إرسال</button>
         </form>
       </main>
+
+      <aside class="info-panel">
+        <div class="panel-card profile-box">
+          <div class="profile-avatar">ر</div>
+          <h3>مجموعة رفاق</h3>
+          <p>أصدقاء، فريق، أفكار، تنفيذ.</p>
+          <div class="status-pill online">متصل الآن</div>
+        </div>
+
+        <div class="panel-card">
+          <div class="panel-header">
+            <h4>الأعضاء</h4>
+            <span>12</span>
+          </div>
+          <ul class="member-list">
+            <li><span class="member-dot online"></span> أحمد</li>
+            <li><span class="member-dot online"></span> سارة</li>
+            <li><span class="member-dot online"></span> محمود</li>
+            <li><span class="member-dot away"></span> ندى</li>
+            <li><span class="member-dot online"></span> يوسف</li>
+          </ul>
+        </div>
+
+        <div class="panel-card">
+          <div class="panel-header">
+            <h4>ملخص المجموعة</h4>
+          </div>
+          <div class="meta-grid">
+            <div>
+              <strong>8</strong>
+              <span>محادثات</span>
+            </div>
+            <div>
+              <strong>145</strong>
+              <span>رسالة</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>مهام</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>أحداث</span>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
 
     <script src="app.js"></script>
